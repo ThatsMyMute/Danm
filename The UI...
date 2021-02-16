@@ -63,7 +63,7 @@ local function MakeDraggable(topbarobject, object)
 			if input.UserInputType == Enum.UserInputType.MouseButton1 or input.UserInputType == Enum.UserInputType.Touch then
 				Dragging = true
 				DragStart = input.Position
-				StartPosition = object.Positio
+				StartPosition = object.Position
 
 				input.Changed:Connect(
 					function()
@@ -136,7 +136,7 @@ function Ripple(obj)
 	)
 end
 
-local Lib = Instance.new("ScreenGui")
+local DarkHubLib = Instance.new("ScreenGui")
 DarkHubLib.Name = "DarkHubLib"
 DarkHubLib.Parent = game.CoreGui
 DarkHubLib.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
@@ -173,7 +173,7 @@ function DarkLib:Window()
 	Title.Position = UDim2.new(0.42778793, 0, 0.041837737, 0)
 	Title.Size = UDim2.new(0, 78, 0, 30)
 	Title.Font = Enum.Font.Gotham
-	Title.Text = "Skidded hub"
+	Title.Text = "Skidded Hub"
 	Title.TextColor3 = Color3.fromRGB(168, 168, 168)
 	Title.TextSize = 20.000
 
